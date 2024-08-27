@@ -1,0 +1,34 @@
+Usermodel
+
+full name - string
+email - string
+password - string
+cart - array
+isadmin - boolean 
+orders - array
+contact- number
+picture - db
+
+
+Product
+image
+name 
+price  
+discount
+bgcolor
+panelcolor
+textcolor
+
+using a configuration management system improves scalability by 
+providing a clear separation of concerns, managing environment-specific 
+settings, centralizing configuration management, enhancing security,
+and simplifying testing, deployment, and maintenance processes. This 
+approach facilitates smoother scaling and adaptation of the application
+to different environments and requirements.
+
+/sign up or login
+/shop -> shop
+/users/carts -> cart
+/admin -> admin panel
+/owner/products -> show all products
+/owner/admin -> show admin panel to create product

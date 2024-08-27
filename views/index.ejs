@@ -1,0 +1,64 @@
+<%- include('./partials/header') %>
+
+    <% if(error && error.length>0){ %>
+        <div class="absolute top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 p-3 rounded-md bg-red-500">
+            <span class="inline-block mt-1 mb-1 text-white">
+                <%= error %>
+            </span>
+        </div>
+        <% } %>
+        <body>
+            <div class="w-full h-full flex px-20 mt-10 justify-between">
+                <div class="spinner mt-40 ml-20">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  
+                <div class="w flex items-center justify-center h-full">
+                    <div class="w-full px-32">
+                        <div class="wrapper">
+                            <div class="card-switch">
+                                <label class="switch">
+                                    <input type="checkbox" class="toggle">
+                                    <span class="slider"></span>
+                                    <span class="card-side"></span>
+                                    <div class="flip-card__inner">
+                                        <div class="flip-card__front">
+                                            <div class="title">Log in</div>
+                                            <form class="flip-card__form" action="/users/login" method="post">
+                                                <input class="flip-card__input" name="email" placeholder="Email" type="email"required>
+                                                <input class="flip-card__input" name="password" placeholder="Password" type="password" required>
+                                                <button class="flip-card__btn" type="submit">Let’s go!</button>
+                                            </form>
+                                        </div>
+                                        <div class="flip-card__back">
+                                            <div class="title">Sign up</div>
+                                            <form class="flip-card__form" action="/users/register" method="post">
+                                                <input class="flip-card__input" name="fullname" placeholder="Name" type="text" required>
+                                                <input class="flip-card__input" name="email" placeholder="Email" type="email" required>
+                                                <input class="flip-card__input" name="password" placeholder="Password" type="password" required>
+                                                <button class="flip-card__btn" type="submit">Confirm!</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>-full
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="spinner mt-40 mr-20">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  
+            </div>
+            <%- include('./partials/footer') %>
